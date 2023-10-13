@@ -4,11 +4,6 @@ const createFood = async (req, res) => {
     try {
         const reqBody = req.body;
 
-        if (req.file) {
-            reqBody.image = req.file.filename;
-        } else {
-            throw new Error("Food  image is required!");
-        }
 
         const food = await foodService.createFood(reqBody);
         if (!food) {

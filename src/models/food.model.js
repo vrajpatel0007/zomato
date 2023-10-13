@@ -6,7 +6,7 @@ const foodSchema = new mongoose.Schema(
             type: String,
             trim: true,
         },
-        food_image: {
+        food_imag: {
             type: String,
             trim: true,
         },
@@ -33,15 +33,11 @@ const foodSchema = new mongoose.Schema(
     },
     {
         timestamps: true,
-        versionkey: false
-    },
-    {
-        timestamps: true,
         versionkey: false,
         toJSON: {
             transform: function (doc, data) {
-                if (data?.product_imag) {
-                    data.product_imag = `${config.base_url}product_images/${data.product_imag}`;
+                if (data?.food_imag) {
+                    data.food_imag = `${config.base_url}food_imag/${data.food_imag}`;
                 }
             },
         },

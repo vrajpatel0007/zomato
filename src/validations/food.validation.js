@@ -4,7 +4,7 @@ const Joi = require("joi")
 const createFood = {
     body: Joi.object().keys({
         food_name: Joi.string().required().trim(),
-        food_image: Joi.string().allow("").trim(),
+        food_imag: Joi.string().allow("").trim(),
         food_desc: Joi.string().required().trim(),
         food_tayps: Joi.string().required().trim(),
         food_price: Joi.string().required().trim(),
@@ -16,7 +16,7 @@ const createFood = {
 const getFood = {
     query: Joi.object().keys({
         food_name: Joi.string().required().trim(),
-        food_image: Joi.string().allow("").trim(),
+        food_imag: Joi.string().allow("").trim(),
         food_desc: Joi.string().required().trim(),
         food_tayps: Joi.string().required().trim(),
         food_price: Joi.string().required().trim(),

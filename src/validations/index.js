@@ -1,2 +1,11 @@
 module.exports.userValidation = require("./user.validation")
 module.exports.foodValidation = require("./food.validation")
+module.exports.ownerVallidation = require("./owner.validation")
+module.exports.DeliveryVallidation = require("./Delivery.validation");
+module.exports.cityVallidation = require("./city.validation");
+module.exports.coadminVallidation = require("./coadmin.validation");
+module.exports.countryVallidation = require("./country.validation");
+module.exports.loginVallidation = require("./login.validation");
+module.exports.orderVallidation = require("./order.validation");
+module.exports.restaurantVallidation = require("./restaurant.validation");
+module.exports.stateVallidation = require("./state.validation");

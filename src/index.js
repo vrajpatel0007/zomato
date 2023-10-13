@@ -4,7 +4,6 @@ const cors = require("cors");
 const http = require("http");
 const { connectDB } = require("./db/dbConnection");
 const routes = require("./routes/v1");
-// require("./helpers/crons");
 const config = require("./config/config");
 
 const app = express();
@@ -23,8 +22,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 /** enable cors */
-app.use(cors());
-app.options("*", cors());
+// app.use(cors());
+// app.options("*", cors());
 
 /** upload image */
 app.use(express.static(`./public`));

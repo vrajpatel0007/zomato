@@ -1,2 +1,11 @@
 module.exports.userController = require("./user.controller");
 module.exports.foodController = require("./food.controller");
+module.exports.ownerController = require("./owner.controller");
+module.exports.DeliveryController = require("./Delivery.controller");
+module.exports.cityController = require("./city.controller");
+module.exports.coadminController = require("./coadmin.controller");
+module.exports.countryController = require("./country.controller");
+module.exports.loginController = require("./login.controller");
+module.exports.orderController = require("./order.controller");
+module.exports.restaurantController = require("./restaurant.controller");
+module.exports.stateController = require("./state.controller");

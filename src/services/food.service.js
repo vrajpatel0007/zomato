@@ -1,4 +1,4 @@
-const { Food } = require("../models")
+const Food  = require("../models/food.model")
 
 /**
  * create food

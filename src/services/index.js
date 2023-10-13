@@ -1,2 +1,11 @@
 module.exports.userService = require("./user.service");
 module.exports.foodService = require("./food.service");
+module.exports.ownerService = require("./owner.service");
+module.exports.DeliveryService = require("./Delivery.service");
+module.exports.cityService = require("./city.service");
+module.exports.coadminService = require("./coadmin.service");
+module.exports.countryService = require("./country.service");
+module.exports.loginService = require("./login.service");
+module.exports.orderService = require("./order.service");
+module.exports.restaurantService = require("./restaurant.service");
+module.exports.stateService = require("./state.service");

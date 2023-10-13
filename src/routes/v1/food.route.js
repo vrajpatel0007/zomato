@@ -9,7 +9,7 @@ const router = express.Router();
 /**create food  */
 router.post(
     "/create-food",
-    upload.single("food_image"),
+    upload.single("food_imag"),
     validate(foodValidation.createFood),
     foodController.createFood
 );

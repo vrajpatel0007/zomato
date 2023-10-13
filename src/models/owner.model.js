@@ -14,7 +14,7 @@ const ownerSchema = new mongoose.Schema(
             type: String,
             trim: true,
         },
-        shop_name: {
+        restaurant_name: {
             type: String,
             trim: true,
         },
